@@ -13,8 +13,8 @@
             box-sizing: border-box;
         }
 
-        .outer {
-            width: 650px;
+        /* .outer {
+            width: 500px;
             position: relative;
             background-color: #1a1a1a;
             background-image: url('assets/bg.jpg');
@@ -44,8 +44,7 @@
         }
 
         .container {
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.3);
+            width: 100%;       
             padding: 40px;
         }
 
@@ -108,35 +107,88 @@
         }
 
         .text {
-            /* width: 60%; */
-            /* margin: 2rem auto; */
-            margin: 32px 0 32px 0;
+            padding: 32px 0 32px 0;
             text-align: center;
             font-size: 10px;
             color: #a7a7a7;
-        }
+        } */
 
     </style>
 </head>
 <body>
-    <div class="outer">
-        <div class="overlay">
-    
+    <div class="outer" style="
+        width: 500px;
+        position: relative;
+        background-color: #1a1a1a;
+        background-image: url('assets/bg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #f8f8f8;
+        font-family: 'Noto Serif TC', 'Georgia', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        text-align: center;
+        padding: 32px;
+        box-sizing: border-box;
+        z-index: 1;
+    ">
+        <div class="overlay" style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.1);
+            z-index: -1;
+        ">
         </div>
 
-        <div class="container">
-            <div class="title">
-                <img src="assets/siteTitle.png" alt="天堂養老院 381">
-                <p>381</p>  
+        <div class="container" style="
+            width: 100%;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.3);
+        ">
+            <div class="title" style="
+                position: relative;
+                width: 60%;
+                margin: 0 auto;
+            ">
+                <img src="assets/siteTitle.png" alt="天堂養老院 381" style="
+                    width: 100%;
+                    height: auto;
+                ">
+                <p style="
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    transform: translate(-10%, 25%) rotate(-10deg);
+                    font-size: 32px;
+                    color: rgb(255, 255, 255);
+                    text-shadow: 3px 3px 6px rgba(243, 243, 243, 0.7);
+                    font-style: italic;
+                    font-weight: 900;
+                ">381</p>  
             </div>
         
-        
-            <div class="slogan">
+            <div class="slogan" style="
+                padding: 24px 0;
+                font-size: 20px;
+                color: #5cf4ff;
+                font-style: italic;
+                font-weight: 900;
+            ">
                 <p>上線輕鬆點，下線睡好點。</p>
                 <p>輕鬆玩，慢慢玩，一起玩到老!!</p>
             </div>
 
-            <p class="description">
+            <p class="description" style="
+                max-width: 600px;
+                margin: 0 auto 40px auto;
+                line-height: 1.8;
+                font-size: 14px;
+            ">
             還記得當年，一身裝備都是靠雙手打拼出來的驕傲嗎？<br>
             在天堂養老院，我們重現那段「農就有希望」的美好時光。<br>
             這裡不比財力，只比毅力。無課金壓力，只為找回遊戲的初心。<br>
@@ -144,14 +196,28 @@
             </p>
 
             <div>
-                <a  href="https://discord.gg/kMJ3dB9Tmf" class="discord-button" target="_blank">加入我們的 Discord</a>
+                <a href="https://discord.gg/kMJ3dB9Tmf" class="discord-button" target="_blank" style="
+                    display: inline-block;
+                    background-color: #7289da;
+                    color: #ffffff;
+                    padding: 15px 30px;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    transition: background-color 0.3s, transform 0.2s;
+                ">加入我們的 Discord</a>
             </div>
 
-            <div class="text">
+            <div class="text" style="
+                padding: 32px 0 32px 0;
+                text-align: center;
+                font-size: 10px;
+                color: #a7a7a7;
+            ">
                 <p>本伺服器為研究SQL資料庫以及學習Java語法之使用，無商業用途更無強制提供付款行為，測試過程絕無任何不法行為參與測試玩家皆是自願參與，測試玩家行為與本伺服器無關，本伺服器僅提供玩家測試與遊玩心得交流，如代理商認為我們有任何不適或影響貴公司請來信告知，我們將在第一時間關閉服務。</p>
             </div>
         </div>
     </div>
-
 </body>
 </html>
