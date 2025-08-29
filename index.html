@@ -6,43 +6,46 @@
     <title>天堂養老院 381</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        body {
+        .outer {
+            width: 650px;
+            position: relative;
             background-color: #1a1a1a;
             background-image: url('assets/bg.jpg');
             background-size: cover;
+            background-repeat: no-repeat;
             color: #f8f8f8;
             font-family: 'Noto Serif TC', 'Georgia', serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
             margin: 0;
             text-align: center;
-            padding: 20px;
+            padding: 2rem;
             box-sizing: border-box;
+            z-index: -1;
         }
         
-        body::before {
+        .overlay {
             content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.3);
             z-index: -1;
         }
 
         .container {
-            max-width: 800px;
             width: 100%;
-            backdrop-filter: blur(3px);
+            background-color: rgba(0, 0, 0, 0.3);
             padding: 40px;
         }
 
@@ -62,20 +65,19 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
-                transform: translate(-20%, 10%);
-                font-size: 2em;
+                transform: translate(-20%, 10%) rotate(-10deg);
+                font-size: 2rem;
                 color: rgb(255, 255, 255);
                 text-shadow: 3px 3px 6px rgba(243, 243, 243, 0.7);
                 font-style: italic;
                 font-weight: 900;
-                rotate: -10deg;
         }
 
         
         
         .slogan {
-            margin: 1.5rem 0;
-            font-size: 1.5em;
+            padding: 1.5rem 0;
+            font-size: 1.2em;
             color: #5cf4ff;
             font-style: italic;
             font-weight: 900;
@@ -85,7 +87,7 @@
             max-width: 600px;
             margin: 0 auto 40px auto;
             line-height: 1.8;
-            font-size: 1.1em;
+            font-size: 0.9em;
         }
 
         .discord-button {
@@ -130,29 +132,34 @@
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <div class="title">
-            <img src="assets/siteTitle.png" alt="天堂養老院 381">
-            <p>381</p>  
-        </div>
-      
+    <div class="outer">
+        <div class="overlay">
     
-        <div class="slogan">
-            <p>上線輕鬆點，下線睡好點。</p>
-            <p>輕鬆玩，慢慢玩，一起玩到老!!</p>
         </div>
 
-        <p class="description">
-        還記得當年，一身裝備都是靠雙手打拼出來的驕傲嗎？<br>
-        在天堂養老院，我們重現那段「農就有希望」的美好時光。<br>
-        這裡不比財力，只比毅力。無課金壓力，只為找回遊戲的初心。<br>
-        與戰友們一起，再次體驗單純的快樂。
-        </p>
+        <div class="container">
+            <div class="title">
+                <img src="assets/siteTitle.png" alt="天堂養老院 381">
+                <p>381</p>  
+            </div>
+        
+        
+            <div class="slogan">
+                <p>上線輕鬆點，下線睡好點。</p>
+                <p>輕鬆玩，慢慢玩，一起玩到老!!</p>
+            </div>
 
-        <a href="https://discord.gg/kMJ3dB9Tmf" class="discord-button" target="_blank">加入我們的 Discord</a>
+            <p class="description">
+            還記得當年，一身裝備都是靠雙手打拼出來的驕傲嗎？<br>
+            在天堂養老院，我們重現那段「農就有希望」的美好時光。<br>
+            這裡不比財力，只比毅力。無課金壓力，只為找回遊戲的初心。<br>
+            與戰友們一起，再次體驗單純的快樂。
+            </p>
 
-        <p class="text">本伺服器為研究SQL資料庫以及學習Java語法之使用，無商業用途更無強制提供付款行為，測試過程絕無任何不法行為參與測試玩家皆是自願參與，測試玩家行為與本伺服器無關，本伺服器僅提供玩家測試與遊玩心得交流，如代理商認為我們有任何不適或影響貴公司請來信告知，我們將在第一時間關閉服務。</p>
+            <a href="https://discord.gg/kMJ3dB9Tmf" class="discord-button" target="_blank">加入我們的 Discord</a>
+
+            <p class="text">本伺服器為研究SQL資料庫以及學習Java語法之使用，無商業用途更無強制提供付款行為，測試過程絕無任何不法行為參與測試玩家皆是自願參與，測試玩家行為與本伺服器無關，本伺服器僅提供玩家測試與遊玩心得交流，如代理商認為我們有任何不適或影響貴公司請來信告知，我們將在第一時間關閉服務。</p>
+        </div>
     </div>
 
 </body>
