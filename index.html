@@ -15,7 +15,9 @@
 
         body {
             background-color: #1a1a1a;
-            color: #e0e0e0;
+            background-image: url('assets/bg.png');
+            background-size: cover;
+            color: #fcfcfc;
             font-family: 'Noto Serif TC', 'Georgia', serif;
             display: flex;
             justify-content: center;
@@ -36,20 +38,13 @@
             width: 100%;
         }
 
-        h1 {
-            color: #f0e68c;
-            font-size: 3em;
-            font-weight: 700;
-            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
-            margin-bottom: 10px;
-        }
-
         .slogan {
             font-size: 1.5em;
-            color: #b0c4de;
+            color: #68aaff;
             font-style: italic;
             margin-top: 0;
             margin-bottom: 20px;
+            font-weight: 900;
         }
 
         .description {
@@ -71,9 +66,14 @@
             transition: background-color 0.3s, transform 0.2s;
         }
 
-        .discord-button:hover {
+        /* .discord-button:hover {
             background-color: #5f73bc;
             transform: scale(1.05);
+        } */
+
+        .footer {
+            font-size: 0.8em;
+            margin-top: 20px;
         }
 
         @media (max-width: 600px) {
@@ -99,7 +99,7 @@
         <img src="assets/siteTitle.png" alt="天堂養老院 381">
         <div class="slogan">
             <p>上線輕鬆點，下線睡好點。</p>
-            <p>輕鬆玩，慢慢玩，一起玩到老。</p>
+            <p>輕鬆玩，慢慢玩，一起玩到老!!</p>
         </div>
 
         <p class="description">
@@ -110,6 +110,7 @@
         </p>
 
         <a href="https://discord.gg/kMJ3dB9Tmf" class="discord-button" target="_blank">加入我們的 Discord</a>
+        <p class="footer">本伺服器為研究SQL資料庫以及學習Java語法之使用，無商業用途更無強制提供付款行為，測試過程絕無任何不法行為參與測試玩家皆是自願參與，測試玩家行為與本伺服器無關，本伺服器僅提供玩家測試與遊玩心得交流，如代理商認為我們有任何不適或影響貴公司請來信告知，我們將在第一時間關閉服務。</p>
     </div>
 
 </body>
